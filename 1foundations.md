@@ -31,9 +31,23 @@ understand the application, identify trust boundaries, follow data flow, look fo
 ## White Box vs Black Box vs Grey Box Testing  
 Penetration testing(Black box)---Security testing(Grey box---Security code review(white box)  
 Phase1 -- white box(pre-release) ci/cd --- maximum coverage  
-Phase2 -- Grey box(pre-prod) -- balanced approach 
+Phase2 -- Grey box(pre-prod) -- balanced approach  
 phase3 -- Black box(production)  -- exernal attacker view  
 
+## Threat Modeling for Code Review  
+is the process of identifying assets, threats, vulenrabilities, risks and defining countermeasures  
+what is built, what can go wrong, how to mitigate, validate  
+
+**Threat-Driven Code Review**  
+prioritize high-risk components first, prevent entire vuln class, focus on boundaries & attack surfaces  
+
+**The STRIDE Framework**: Apply STRIDE to code reviews    
+Spoofing -- authentication - weak pass validation  
+Tampering -- Integrity -- SQL injection -- Data modification  
+Redudiation -- Non-Repudiation  -- Missing audit logs -- Deny actions  
+Information Disclosure -- Confidentiality -- Verbose error messages  -- Data leakage  
+Denial of service -- Availability -- Infinite loops -- Service unavailability  
+Elevation of Privileges -- Authorization -- Misssing access checks -- Unauthorized access  
 
 
 
