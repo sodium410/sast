@@ -6,9 +6,6 @@ https://owasp.org/www-project-code-review-guide/
 **Security code review**: is the systematic examination of source code with the goal of identifying security vulnerabilities(xx,sqli),  
 design flaws(no-auth), implementation weaknesses(weak ssl), configuration issues(defaul/hardcoded secrets),business-logic flaws that could be exploited by attackers.  
 
-**The Security Testing Pyramid**..  
-Penetration testing(Black box)---Security testing(Grey box---Security code review(white box)  
-
 **Benefits**: Cost benefit, Early detection, complete coverage, no environment needed, prevent vul classes, RCA  
 
 **When to perofrm security code review**:  
@@ -31,7 +28,11 @@ we have waf, we have sast so no manual verification of its results, we do pentes
 **Getting Sarted**: your first code review  
 understand the application, identify trust boundaries, follow data flow, look for security hotpots(auth,author,crypto,inputvali,errorhandling)  
 
-
+## White Box vs Black Box vs Grey Box Testing  
+Penetration testing(Black box)---Security testing(Grey box---Security code review(white box)  
+Phase1 -- white box(pre-release) ci/cd --- maximum coverage  
+Phase2 -- Grey box(pre-prod) -- balanced approach 
+phase3 -- Black box(production)  -- exernal attacker view  
 
 
 
